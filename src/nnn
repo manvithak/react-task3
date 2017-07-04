@@ -1,0 +1,8 @@
+<select ref="userInput" defaultValue="" required>
+  <option value="" disabled>News</option>
+  {
+    filterNews.map(function(news,index) {
+      return <option key={index} value={news.id} >{news.id}</option>;
+    })
+  }
+</select>
