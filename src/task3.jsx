@@ -36,11 +36,8 @@ class DisplayNewsInfo extends React.Component{
           console.log(err);
         });
   }
- componentDidMount(){
+ componentWillMount(){
    this.handleNews(this.props.info);
- }
- componentWillReceiveProps(nextProps){
-   this.handleNews(nextProps.info);
  }
  render(){
    const newsInfo = this.state.newsInfo;
